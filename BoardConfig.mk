@@ -18,6 +18,9 @@ DEVICE_PATH := device/xiaomi/kenzo
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 ALLOW_MISSING_DEPENDENCIES := true
 
+# We still use copy headers.
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
