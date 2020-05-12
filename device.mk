@@ -54,16 +54,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
-# Inherit from msm8956-common
-$(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
-
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/msm8956-common/msm8956-common-vendor.mk)
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -436,7 +426,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.kenzo.rc
 
 PRODUCT_PACKAGES += \
     init.qcom.rc \
@@ -585,7 +576,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
-	
+
 # Enable missing props
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
@@ -596,4 +587,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
+
 

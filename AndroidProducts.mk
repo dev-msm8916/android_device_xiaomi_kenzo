@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_kenzo.mk
+    $(LOCAL_DIR)/lineage_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_kenzo-userdebug \
-	aicp_kenzo-user \
-    aicp_kenzo-eng
+    lineage_kenzo-userdebug \
+    lineage_kenzo-user \
+    lineage_kenzo-eng
