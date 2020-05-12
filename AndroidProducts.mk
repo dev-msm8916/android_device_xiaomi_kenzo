@@ -18,4 +18,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     aicp_kenzo-userdebug \
+	aicp_kenzo-user \
     aicp_kenzo-eng
