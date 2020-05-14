@@ -113,7 +113,8 @@ PRODUCT_COPY_FILES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    CustomDoze
+    CustomDoze \
+    XiaomiDoze
 
 # Audio
 PRODUCT_PACKAGES += \
