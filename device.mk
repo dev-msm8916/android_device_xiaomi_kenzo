@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9326.xml
 
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprint.msm8952
@@ -97,7 +96,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 #Android net
-
 PRODUCT_PACKAGES += \
    libandroid_net \
    libandroid_net_32
@@ -111,9 +109,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
-# Doze mode
+# Ximi Doze
 PRODUCT_PACKAGES += \
-    CustomDoze \
     XiaomiDoze
 
 # Audio
@@ -164,7 +161,6 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
-
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -253,7 +249,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey
 
-#Face  detection extension
+#Face detection extension
 PRODUCT_PACKAGES += \
     org.codeaurora.camera
 
@@ -261,6 +257,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.0-service-custom
 
+# AuthSecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0-service
+    
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -328,11 +328,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system
-
-# IPA Manager
-#PRODUCT_PACKAGES += \
-#    ipacm \
-#    IPACM_cfg.xml
 
 # IPC router config
 PRODUCT_COPY_FILES += \
@@ -417,11 +412,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml \
     libxml2
-
-# QTI performance
- #PRODUCT_BOOT_JARS += \
-     #QPerformance \
-     #UxPerformance
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -555,14 +545,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# AdvancedControls
+# Ximi Parts
 PRODUCT_PACKAGES += \
-    AdvancedControls
+    XiaomiParts
 
 #MarkupGoogle
 PRODUCT_PACKAGES += \
     MarkupGoogle
-
 
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -588,5 +577,3 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
-
-

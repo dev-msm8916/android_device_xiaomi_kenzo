@@ -139,7 +139,7 @@ on boot
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
-# AdvancedControls
+# XimiParts
     chown root system /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
     chmod 0660 /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
     chown root system /sys/kernel/sound_control/headphone_gain
