@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kenzo.mk
+    $(LOCAL_DIR)/revengeos_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kenzo-userdebug \
-    lineage_kenzo-user \
-    lineage_kenzo-eng
+    revengeos_kenzo-userdebug \
+    revengeos_kenzo-user \
+    revengeos_kenzo-eng
