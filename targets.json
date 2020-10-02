@@ -1,9 +1,12 @@
 {
     "target_github": "https://github.com/DevOtag-Open-Source/",
 
-    "target_branch": "ten",
+    "target_branch": "eleven",
 
     "target_trees": "",
 
-    "target_commits": ""
+    "target_commits": {
+            "android_art": ["d5a6dbd29efa7c4a341ab4f65bde1f04eac34d09",
+                            "295e71b5f6a5ce71ada603c100a9c25818c10978"]
+    }
 }
