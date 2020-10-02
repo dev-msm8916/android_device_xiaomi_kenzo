@@ -223,6 +223,10 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.use_psi=false
 
+# Disable trace
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.traced.enable=0
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
