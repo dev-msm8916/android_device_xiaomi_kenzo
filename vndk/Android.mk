@@ -17,6 +17,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_INSTALLED_MODULE_STEM := $1.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_RELATIVE_PATH := $(vndk_sp_dir)
+LOCAL_CHECK_ELF_FILES := false
 include $$(BUILD_PREBUILT)
 
 ifneq ($$(TARGET_2ND_ARCH),)
@@ -31,6 +32,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_INSTALLED_MODULE_STEM := $1.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_RELATIVE_PATH := $(vndk_sp_dir)
+LOCAL_CHECK_ELF_FILES := false
 include $$(BUILD_PREBUILT)
 endif # TARGET_TRANSLATE_2ND_ARCH is not true
 endif # TARGET_2ND_ARCH is not empty
@@ -43,6 +45,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := vndk-sp
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := $(addsuffix .vndk-sp-gen,$(VNDK_SP_LIBRARIES))
+LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PHONY_PACKAGE)
 
 vndk_sp_dir :=
