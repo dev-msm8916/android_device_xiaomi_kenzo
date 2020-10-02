@@ -257,8 +257,8 @@ PRODUCT_PACKAGES += \
     org.codeaurora.camera
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service-custom
+#PRODUCT_PACKAGES += \
+#    android.hardware.biometrics.fingerprint@2.0-service-custom
 
 # AuthSecret
 PRODUCT_PACKAGES += \
