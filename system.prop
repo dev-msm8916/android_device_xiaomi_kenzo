@@ -48,6 +48,14 @@ persist.bluetooth.bluetooth_audio_hal.disabled=true
 sys.vendor.shutdown.waittime=500
 ro.build.shutdown_timeout=0
 
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=288m
+dalvik.vm.heapsize=768m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
 # Radio
 persist.radio.cs_srv_type=1
 persist.radio.force_on_dc=true
