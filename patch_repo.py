@@ -17,10 +17,10 @@ class PatchRepo:
         print("Done.")
 
         # Make sure that all trees cloned which are needed
-        #print("Checking device trees...")
-        #for tree in self.target_trees:
-        #    self.clone_tree(tree)
-        #print("Done.")
+        print("Checking device trees...")
+        for tree in self.target_trees:
+            self.clone_tree(tree)
+        print("Done.")
 
         # Time to cherry-pick
         print("Cherry-pick's started...")

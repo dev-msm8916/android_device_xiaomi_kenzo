@@ -3,7 +3,8 @@
 
     "target_branch": "eleven",
 
-    "target_trees": "",
+    "target_trees": ["android_kernel_xiaomi_msm8956|kernel/xiaomi/msm8956",
+                     "android_vendor_xiaomi|vendor/xiaomi"],
 
     "target_commits": {
             "android_art": ["d5a6dbd29efa7c4a341ab4f65bde1f04eac34d09",
