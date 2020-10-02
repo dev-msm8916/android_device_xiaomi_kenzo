@@ -219,6 +219,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=DISABLED
 endif
 
+# Disable psi monitors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_psi=false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
