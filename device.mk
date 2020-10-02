@@ -427,6 +427,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.target.rc \
+    init.logger.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc \
     init.safailnet.rc \
