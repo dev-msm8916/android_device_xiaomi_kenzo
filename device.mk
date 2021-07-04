@@ -209,10 +209,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
-# DevOtag
-PRODUCT_PACKAGES += \
-    DevOtag
-
 # Disable setupwizard
 ifeq ($(DISABLE_SETUPWIZARD),true)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -278,15 +274,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-
-# Google Camera
-#PRODUCT_PACKAGES += \
-#    GoogleCamera \
-#    GoogleServicesFramework
-
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/GoogleCamera/privapp-permissions-GoogleCamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-GoogleCamera.xml \
-#    $(LOCAL_PATH)/GoogleCamera/privapp-permissions-GoogleServicesFramework.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-GoogleServicesFramework.xml
 
 # GPS
 PRODUCT_PACKAGES += \
