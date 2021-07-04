@@ -20,11 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kenzo device
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common NezukoOS stuff.
+$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 
-# Product packages
-TARGET_USE_JELLY := true
+# NezukoOS Maintainer
+NEZUKO_MAINTAINER := xvae27
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -35,12 +35,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := revengeos_kenzo
+PRODUCT_NAME := nezuko_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
-IS_PHONE := true
-TARGET_INCLUDE_STOCK_ARCORE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
