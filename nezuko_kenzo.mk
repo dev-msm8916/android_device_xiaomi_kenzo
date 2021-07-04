@@ -26,11 +26,6 @@ $(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 # NezukoOS Maintainer
 NEZUKO_MAINTAINER := xvae27
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
