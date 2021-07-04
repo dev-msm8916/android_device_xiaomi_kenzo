@@ -545,10 +545,6 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    XiaomiParts
 
-#MarkupGoogle
-PRODUCT_PACKAGES += \
-    MarkupGoogle
-
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
